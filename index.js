@@ -13,7 +13,7 @@ const bot = new TelegramBot(TOKEN, {
 
 bot.openWebHook();
 
-const webHookUrl = `https://duckprojectrender.onrender.com/bot${TOKEN}`;
+const webHookUrl = `https://duckcoders.onrender.com/bot${TOKEN}`;
 
 bot.setWebHook(webHookUrl);
 
@@ -21,9 +21,9 @@ bot.on("message", (msg) => {
   const {
     chat: { id, first_name },
   } = msg;
-  bot.sendMessage(id, "Я бот Валера");
+  bot.sendMessage(id, "My name is bot Mr. McDuck");
 
-  const welcomeMessage = `Привет, ${first_name}! Добро пожаловать в моё окружение!`;
+  const welcomeMessage = `Привет, ${first_name}! Добро пожаловать в моё гнездо! Может жареных яиц?:)`;
 
   bot.sendMessage(id, welcomeMessage);
 });
