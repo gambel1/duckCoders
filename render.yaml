@@ -1,0 +1,5 @@
+services:
+  - name: my-telegram-bot
+    type: web
+    routes:
+      - path: /bot
