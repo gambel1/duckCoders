@@ -21,9 +21,9 @@ bot.on("message", (msg) => {
   const {
     chat: { id, first_name },
   } = msg;
-  bot.sendMessage(id, "I am a bot Mr. McDuck");
+  bot.sendMessage(id, "Я бот Валера");
 
-  const welcomeMessage = `Привет, ${first_name}! Добро пожаловать в моё гнездо!`;
+  const welcomeMessage = `Привет, ${first_name}! Добро пожаловать в моё окружение!`;
 
   bot.sendMessage(id, welcomeMessage);
 });
