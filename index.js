@@ -31,7 +31,7 @@ bot.on("message", (msg) => {
     setTimeout(() => {
       const welcomeMessage = `Привет, ${userName}! Добро пожаловать в моё пространство!:)`;
       bot.sendMessage(id, welcomeMessage);
-    }, 1000);
+    }, 5000);
   };
   timer();
 });
