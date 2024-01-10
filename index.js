@@ -22,11 +22,11 @@ bot.on("message", (msg) => {
     chat: { id },
     from: { first_name },
   } = msg;
-  bot.sendMessage(id, "My name is bot Mr. McDuck");
+  bot.sendMessage(id, "My name is bot Valera");
 
   const userName =
     msg.from.first_name || msg.chat.first_name || "Неизвестный юзер";
 
-  const welcomeMessage = `Привет, ${userName}! Добро пожаловать в моё гнездо! Может жареных яиц?:)`;
+  const welcomeMessage = `Привет, ${userName}! Добро пожаловать в моё пространство!:)`;
   bot.sendMessage(id, welcomeMessage);
 });
