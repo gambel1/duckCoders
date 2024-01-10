@@ -27,6 +27,11 @@ bot.on("message", (msg) => {
   const userName =
     msg.from.first_name || msg.chat.first_name || "Неизвестный юзер";
 
-  const welcomeMessage = `Привет, ${userName}! Добро пожаловать в моё пространство!:)`;
-  bot.sendMessage(id, welcomeMessage);
+  const timer = () => {
+    setTimeout(() => {
+      const welcomeMessage = `Привет, ${userName}! Добро пожаловать в моё пространство!:)`;
+      bot.sendMessage(id, welcomeMessage);
+    }, 1000);
+  };
+  timer();
 });
